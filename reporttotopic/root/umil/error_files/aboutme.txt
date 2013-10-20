@@ -1,0 +1,41 @@
+About me
+PHP Version: 5.4.16
+DBMS: MySQL(i) 5.5.32-MariaDB
+phpBB3 Version: 3.0.12
+
+Adding new config variable: allow_profiletext
+ERROR: Config variable allow_profiletext already exists.
+
+Adding new config variable: allow_profiletext_bbcode
+ERROR: Config variable allow_profiletext_bbcode already exists.
+
+Adding new config variable: allow_profiletext_img
+ERROR: Config variable allow_profiletext_img already exists.
+
+Adding new config variable: allow_profiletext_flash
+ERROR: Config variable allow_profiletext_flash already exists.
+
+Adding new config variable: allow_profiletext_smilies
+ERROR: Config variable allow_profiletext_smilies already exists.
+
+Adding new config variable: allow_about_links
+ERROR: Config variable allow_about_links already exists.
+
+Adding new config variable: max_profiletext_chars
+ERROR: Config variable max_profiletext_chars already exists.
+
+Adding new config variable: max_profiletext_urls
+ERROR: Config variable max_profiletext_urls already exists.
+
+Adding new config variable: max_profiletext_font_size
+ERROR: Config variable max_profiletext_font_size already exists.
+
+Adding new config variable: max_profiletext_smilies
+ERROR: Config variable max_profiletext_smilies already exists.
+
+Adding new config variable: max_profiletext_img_width
+ERROR: Config variable max_profiletext_img_width already exists.
+
+Adding new config variable: max_profiletext_img_height
+ERROR: Config variable max_profiletext_img_height already exists.
+

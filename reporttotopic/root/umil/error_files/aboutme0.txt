@@ -1,0 +1,8 @@
+About me
+PHP Version: 5.4.16
+DBMS: MySQL(i) 5.5.32-MariaDB
+phpBB3 Version: 3.0.12
+
+Removing acp module: About me settings
+ERROR: Module does not exist.
+
