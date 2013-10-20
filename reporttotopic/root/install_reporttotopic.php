@@ -30,9 +30,7 @@ $versions = array(
 	'0.1.0'		=> array(
 
 		'table_column_add' => array(
-			array(USERS_TABLE, 'user_profile', array('MTEXT_UNI', '')),
-			array(USERS_TABLE, 'user_profile_bbcode_uid', array('VCHAR:8', '')),
-			array(USERS_TABLE, 'user_profile_bbcode_bitfield', array('VCHAR:255', '')),
+			array(FORUMS_TABLE, 'r2t_report_forum', array('MTEXT_UNI', '')),
 		),
 		
 		'config_add'	=> array(
