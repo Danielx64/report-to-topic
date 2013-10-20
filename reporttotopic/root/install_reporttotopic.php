@@ -54,13 +54,13 @@ $versions = array(
 		),
 
 		'module_add' => array(
-			array('ucp', 'UCP_PROFILE', array(
-					'module_basename'	=> 'profile',
+			array('acp', 'ACP_BOARD_CONFIGURATION', array(
+					'module_basename'	=> 'report2topic',
 					'module_enabled'	=> 1,
 					'module_display'	=> 1,					
-					'module_langname'	=> 'UCP_PROFILE_ABOUTME',
-					'module_mode'		=> 'aboutme',
-					'module_auth'		=> 'acl_u_aedit',
+					'module_langname'	=> 'ACP_REPORTTOTOPIC_CONFIG',
+					'module_mode'		=> 'config',
+					'module_auth'		=> '',
 				),
 			),
 		),		
