@@ -1,0 +1,28 @@
+diff --git a/phpBB/adm/style/acp_forums.html b/phpBB/adm/style/acp_forums.html
+index 9f9216a..52813a5 100644
+--- a/phpBB/adm/style/acp_forums.html
++++ b/phpBB/adm/style/acp_forums.html
+@@ -182,6 +182,12 @@
+ 			<dd><select id="forum_perm_from" name="forum_perm_from"><option value="0">{L_NO_PERMISSIONS}</option>{S_FORUM_OPTIONS}</select></dd>
+ 		</dl>
+ 	<!-- ENDIF -->
++	<!-- INCLUDE mods/report2topic++/report2topic++.html -->
+ 	</fieldset>
+ 
+ 	<div id="forum_cat_options">
+diff --git a/phpBB/includes/acp/acp_forums.php b/phpBB/includes/acp/acp_forums.php
+index 4d9b9f0..4b4137c 100644
+--- a/phpBB/includes/acp/acp_forums.php
++++ b/phpBB/includes/acp/acp_forums.php
+@@ -875,6 +875,11 @@ class acp_forums
+ 
+                $errors = array();
+ 
++               //-- BEGIN report2topic++
++               //-- Add:
++               report2topic_core::getInstance()->acp_alter_forum_data($forum_data, $error);
++               //-- END report2topic++
++
+                if (!$forum_data['forum_name'])
+                {
+                        $errors[] = $user->lang['FORUM_NAME_EMPTY'];
