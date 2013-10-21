@@ -1,1 +1,69 @@
- 
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml-stylesheet type="text/xsl" href="modx.prosilver.en.xsl"?>
+<!--NOTICE: Please open this file in your web browser. If presented with a security warning, you may safely tell it to allow the blocked content.-->
+<!--For security purposes, please check: http://www.phpbb.com/mods/ for the latest version of this MOD.\nAlthough MODs are checked before being allowed in the MODs Database there is no guarantee that there are no security problems within the MOD.\nNo support will be given for MODs not found within the MODs Database which can be found at http://www.phpbb.com/mods/-->
+<mod xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="https://www.phpbb.com/mods/xml/modx-1.2.6.xsd">
+	<header>
+		<meta name="generator" content="MODX file generated with PP MODX Creator 1.2.6 by tumba25 (phpBB version)"/>
+		<license><![CDATA[http://opensource.org/licenses/gpl-license.php GNU General Public License v2]]></license>
+		<title lang="en"><![CDATA[Report to topic]]></title>
+		<description lang="en"><![CDATA[•Each forum can designate another forum to hold the posted report topics for reported posts in that forum, i.e. Forum 1 can designate Forum 1 Reports as its report forum, while Forum 2 can then designate Forum 2 Reports.
+
+NOTE: This is helpful for multiple reasons. For one, it ensures that users who do not have permission to view reports from a certain forum in the MCP also cannot view reports from that forum in the reports forum, as permissions can be set on the forums. Secondly, it also helps with organization so that the reports forum doesn't get overly cluttered.
+
+•Fully customizable report information. An admin can define which information is shown in the report topic by creating a template through the ACP, with the use of tokens the admin can add/remove certain information.]]></description>
+		<author-notes lang="en"><![CDATA[Please note that this requires php 5.0.0+]]></author-notes>
+		<github><![CDATA[https://github.com/Danielx64/report-to-topic/]]></github>
+		<author-group>
+			<author>
+				<realname><![CDATA[Daniel]]></realname>
+				<username><![CDATA[*Daniel]]></username>
+			</author>
+			<author>
+				<realname><![CDATA[Erik]]></realname>
+				<username phpbbcom="no"><![CDATA[Erik FrÃ¨rejean]]></username>
+				<contributions-group>
+					<contributions status="past" position="Orginal author"/>
+				</contributions-group>
+			</author>
+			<author>
+				<realname><![CDATA[David King]]></realname>
+				<username><![CDATA[imkingdavid]]></username>
+				<contributions-group>
+					<contributions status="past"/>
+				</contributions-group>
+			</author>
+		</author-group>
+		<mod-version>0.1.0</mod-version>
+		<installation>
+			<level>easy</level>
+			<time>300</time>
+			<target-version>3.0.12</target-version>
+		</installation>
+	</header>
+	<action-group>
+		<copy>
+			<file from="root/*" to="/*"/>
+		</copy>
+		<open src="adm/style/acp_forums.html">
+			<edit>
+				<find><![CDATA[ 			<dd><select id="forum_perm_from" name="forum_perm_from"><option value="0">{L_NO_PERMISSIONS}</option>{S_FORUM_OPTIONS}</select></dd>
+ 		</dl>
+ 	<!-- ENDIF -->]]></find>
+				<action type="after-add"><![CDATA[<!-- INCLUDE mods/report2topic++/report2topic++.html -->]]></action>
+			</edit>
+		</open>
+		<open src="includes/acp/acp_forums.php">
+			<edit>
+				<find><![CDATA[                if (!$forum_data['forum_name'])
+                {
+                        $errors[] = $user->lang['FORUM_NAME_EMPTY'];]]></find>
+				<action type="before-add"><![CDATA[               //-- BEGIN report2topic++
+               //-- Add:
+               report2topic_core::getInstance()->acp_alter_forum_data($forum_data, $error);
+               //-- END report2topic++]]></action>
+			</edit>
+		</open>
+		<php-installer><![CDATA[install_reporttotopic.php]]></php-installer>
+	</action-group>
+</mod>
