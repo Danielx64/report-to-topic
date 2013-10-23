@@ -3,7 +3,7 @@
  *
  * @package report2topic++
  * @copyright (c) 2010 report2topic++ http://github.com/report2topic
- * @author Erik Frèrejean ( N/A ) http://www.erikfrerejean.nl
+ * @author Erik FrÃ¨rejean ( N/A ) http://www.erikfrerejean.nl
  * @author David King (imkingdavid) http://www.phpbbdevelopers.net
  * @license http://opensource.org/licenses/gpl-license.php GNU Public License
  *
@@ -48,9 +48,9 @@ class report2topic_core
 		'icon_id'	=> false,
 
 		// Defining Post Options
-		'enable_bbcode'		=> false,
-		'enable_smilies'	=> false,
-		'enable_urls'       => false,
+		'enable_bbcode'		=> true,
+		'enable_smilies'	=> true,
+		'enable_urls'       => true,
 		'enable_sig'        => false,
 
 		// Message Body
@@ -73,6 +73,7 @@ class report2topic_core
 
 		// Indexing
 		'enable_indexing' => true,
+		'force_approved_state'	=> true,
 	);
 
 	/**
