@@ -7,7 +7,9 @@
 		<meta name="generator" content="MODX file generated with PP MODX Creator 1.2.6 by tumba25 (phpBB version)"/>
 		<license><![CDATA[http://opensource.org/licenses/gpl-license.php GNU General Public License v2]]></license>
 		<title lang="en"><![CDATA[Report to topic]]></title>
-		<description lang="en"><![CDATA[•Each forum can designate another forum to hold the posted report topics for reported posts in that forum, i.e. Forum 1 can designate Forum 1 Reports as its report forum, while Forum 2 can then designate Forum 2 Reports.
+		<description lang="en"><![CDATA[This MOD enhances phpBB's reporting system by introducing a set of new features. This MOD is based on Erik's report2topic MOD.
+
+•Each forum can designate another forum to hold the posted report topics for reported posts in that forum, i.e. Forum 1 can designate Forum 1 Reports as its report forum, while Forum 2 can then designate Forum 2 Reports.
 
 NOTE: This is helpful for multiple reasons. For one, it ensures that users who do not have permission to view reports from a certain forum in the MCP also cannot view reports from that forum in the reports forum, as permissions can be set on the forums. Secondly, it also helps with organization so that the reports forum doesn't get overly cluttered.
 
