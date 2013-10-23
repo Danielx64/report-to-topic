@@ -17,7 +17,7 @@ if (!defined('IN_PHPBB'))
 	exit;
 }
 
-class acp_report2topic
+class acp_reporttotopic
 {
 	public $u_action;
 

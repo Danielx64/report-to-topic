@@ -3,7 +3,7 @@
  *
  * @package report2topic++
  * @copyright (c) 2010 report2topic++ http://github.com/report2topic
- * @author Erik Frèrejean ( N/A ) http://www.erikfrerejean.nl
+ * @author Erik FrÃ¨rejean ( N/A ) http://www.erikfrerejean.nl
  * @author David King (imkingdavid) http://www.phpbbdevelopers.net
  * @license http://opensource.org/licenses/gpl-license.php GNU Public License
  *
@@ -20,12 +20,12 @@ if (!defined('IN_PHPBB'))
 /**
 * @package module_install
 */
-class acp_report2topic_info
+class acp_reporttotopic_info
 {
 	function module()
 	{
 		return array(
-			'filename'	=> 'acp_report2topic',
+			'filename'	=> 'acp_reporttotopic',
 			'title'		=> 'ACP_REPORT2TOPIC',
 			'version'	=> '1.0.0',
 			'modes'		=> array(
