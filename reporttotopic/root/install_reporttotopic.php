@@ -36,18 +36,27 @@ $versions = array(
 		'config_add'	=> array(
 						array('r2t_dest_forum', '1'),
 						array('r2t_pm_dest_forum', '1'),
-						array('r2t_pm_template', '0'),
-						array('r2t_pm_template_bbcode', '0'),
-						array('r2t_pm_template_sig', '0'),
-						array('r2t_pm_template_smilies', '0'),
-						array('r2t_pm_template_urls', '0'),
-						array('r2t_pm_title', '480'),
-						array('r2t_post_template', '0'),
-						array('r2t_post_template_bbcode', '0'),
-						array('r2t_post_template_sig', '0'),
-						array('r2t_post_template_smilies', '0'),
-						array('r2t_post_template_urls', '0'),
-						array('r2t_post_title', '0'),
+						array('r2t_pm_template', 'Title: {TITLE}
+Reporter: {REPORTER_FULL}
+Reported for: {REPORT_REASON}
+Notes: {REPORT_TEXT}
+Link to report in MCP: {REPORT_LINK}'),
+						array('r2t_pm_template_bbcode', '1'),
+						array('r2t_pm_template_sig', '1'),
+						array('r2t_pm_template_smilies', '1'),
+						array('r2t_pm_template_urls', '1'),
+						array('r2t_pm_title', 'PM report: {TITLE}'),
+						array('r2t_post_template', 'Title: {TITLE}
+Reporter: {REPORTER_FULL}
+Reported post: {REPORT_POST}
+Reported for: {REPORT_REASON}
+Notes: {REPORT_TEXT}
+Link to report in MCP: {REPORT_LINK}'),
+						array('r2t_post_template_bbcode', '1'),
+						array('r2t_post_template_sig', '1'),
+						array('r2t_post_template_smilies', '1'),
+						array('r2t_post_template_urls', '1'),
+						array('r2t_post_title', 'Topic/Post report: {TITLE}'),
 
 		),
 
