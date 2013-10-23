@@ -53,7 +53,7 @@ $versions = array(
 
 		'module_add' => array(
 			array('acp', 'ACP_BOARD_CONFIGURATION', array(
-					'module_basename'	=> 'report2topic',
+					'module_basename'	=> 'reporttotopic',
 					'module_enabled'	=> 1,
 					'module_display'	=> 1,					
 					'module_langname'	=> 'ACP_REPORTTOTOPIC_CONFIG',

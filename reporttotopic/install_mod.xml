@@ -43,7 +43,7 @@ NOTE: This is helpful for multiple reasons. For one, it ensures that users who d
 	</header>
 	<action-group>
 		<copy>
-			<file from="root/*" to="/*"/>
+			<file from="root/*.*" to="/*.*"/>
 		</copy>
 		<open src="adm/style/acp_forums.html">
 			<edit>
@@ -55,9 +55,9 @@ NOTE: This is helpful for multiple reasons. For one, it ensures that users who d
 		</open>
 		<open src="includes/acp/acp_forums.php">
 			<edit>
-				<find><![CDATA[                if (!$forum_data['forum_name'])
-                {
-                        $errors[] = $user->lang['FORUM_NAME_EMPTY'];]]></find>
+				<find><![CDATA[		if ($forum_data['forum_name'] == '')
+		{
+			$errors[] = $user->lang['FORUM_NAME_EMPTY'];]]></find>
 				<action type="before-add"><![CDATA[               //-- BEGIN report2topic++
                //-- Add:
                report2topic_core::getInstance()->acp_alter_forum_data($forum_data, $error);
