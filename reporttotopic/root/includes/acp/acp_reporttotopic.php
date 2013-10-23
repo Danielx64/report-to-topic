@@ -72,7 +72,7 @@ class acp_reporttotopic
 	private function _config()
 	{
 		// Setup the page
-		$this->tpl_name		= 'mods/report2topic++/report2topic++';
+		$this->tpl_name		= 'mods/reporttotopic/reporttotopic';
 		$this->page_title	= 'ACP_REPORT2TOPIC_CONFIG';
 		$this->form_key		= 'report2topic++_config';
 

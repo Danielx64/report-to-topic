@@ -50,7 +50,7 @@ NOTE: This is helpful for multiple reasons. For one, it ensures that users who d
 				<find><![CDATA[ 			<dd><select id="forum_perm_from" name="forum_perm_from"><option value="0">{L_NO_PERMISSIONS}</option>{S_FORUM_OPTIONS}</select></dd>
  		</dl>
  	<!-- ENDIF -->]]></find>
-				<action type="after-add"><![CDATA[<!-- INCLUDE mods/report2topic++/report2topic++.html -->]]></action>
+				<action type="after-add"><![CDATA[<!-- INCLUDE mods/reporttotopic/reporttotopic.html -->]]></action>
 			</edit>
 		</open>
 		<open src="includes/acp/acp_forums.php">
