@@ -29,7 +29,7 @@ class acp_reporttotopic_info
 			'title'		=> 'ACP_REPORT2TOPIC',
 			'version'	=> '1.0.0',
 			'modes'		=> array(
-				'config'	=> array('title' => 'ACP_REPORT2TOPIC_CONFIG', 'auth' => '', 'cat' => array('ACP_REPORT2TOPIC')),
+				'config'	=> array('title' => 'ACP_REPORT2TOPIC_CONFIG', 'auth' =>  'acl_a_board', 'cat' => array('ACP_REPORT2TOPIC')),
 			),
 		);
 	}
