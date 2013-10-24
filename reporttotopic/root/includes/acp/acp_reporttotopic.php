@@ -73,7 +73,7 @@ class acp_reporttotopic
 	{
 		// Setup the page
 		$this->tpl_name		= 'mods/reporttotopic/reporttotopic';
-		$this->page_title	= 'ACP_REPORT2TOPIC_CONFIG';
+		$this->page_title	= 'ACP_REPORTTOTOPIC_CONFIG';
 		$this->form_key		= 'report2topic++_config';
 
 		// Submit
@@ -135,7 +135,7 @@ class acp_reporttotopic
 			set_config('r2t_post_template_urls', $post_template_urls);
 			set_config('r2t_post_template_sig', $post_template_sig);
 
-			trigger_error($this->core->user->lang('ACP_REPORT2TOPIC_CONFIG_SUCCESS') . adm_back_link($this->u_action));
+			trigger_error($this->core->user->lang('ACP_REPORTTOTOPIC_CONFIG_SUCCESS') . adm_back_link($this->u_action));
 		}
 
 		$dest_forum_id		= (isset($this->core->config['r2t_dest_forum'])) ? $this->core->config['r2t_dest_forum'] : 0;
